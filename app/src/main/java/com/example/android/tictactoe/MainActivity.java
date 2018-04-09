@@ -1,5 +1,6 @@
 package com.example.android.tictactoe;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
 
+//        reset button
         Button buttonReset = findViewById(R.id.reset_button);
         buttonReset.setOnClickListener(new View.OnClickListener() {
 
@@ -46,6 +48,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View v) {
                 resetGame();
+
+            }
+        });
+
+//        switch button
+        Button buttonSwitch = findViewById(R.id.switch_board_btn);
+        buttonSwitch.setOnClickListener (new View.OnClickListener() {
+
+            //            switch button OnClickListener
+            @Override
+            public void onClick(View v) {
+                switchBoard();
 
             }
         });
@@ -192,5 +206,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         player2Points = savedInstanceState.getByte("player2Points");
         player1Turn = savedInstanceState.getBoolean("player1Turn");
 
+    }
+
+    private void switchBoard(){
+        Intent intent = new Intent(this, second.class);
+        startActivity(intent);
     }
 }

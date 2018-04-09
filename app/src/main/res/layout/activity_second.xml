@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -59,7 +60,7 @@
 
 
     <!--board-->
-        <!--row 1-->
+    <!--row 1-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -112,7 +113,7 @@
 
     </LinearLayout>
 
-        <!--row 2-->
+    <!--row 2-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -324,7 +325,7 @@
 
     </LinearLayout>
 
-<!--lower buttons-->
+    <!--lower buttons-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -341,7 +342,7 @@
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="27dp" />
 
-        <!--Switch to 5X5 button-->
+        <!--Switch to 3X3 button-->
         <Button
             android:id="@+id/change_5x5"
             android:layout_width="wrap_content"
@@ -349,7 +350,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
             android:layout_marginEnd="14dp"
-            android:text="switch to 5"
+            android:text="switch to 3"
             android:layout_alignParentRight="true"
             android:layout_marginRight="14dp" />
 
