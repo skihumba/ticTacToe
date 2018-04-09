@@ -344,7 +344,7 @@
 
         <!--Switch to 3X3 button-->
         <Button
-            android:id="@+id/change_5x5"
+            android:id="@+id/switch_board_to3_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
