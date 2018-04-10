@@ -73,7 +73,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:gravity="center"
+            android:textAlignment="gravity"/>
 
         <!--button 2-->
         <Button

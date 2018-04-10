@@ -73,7 +73,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            />
 
         <!--button 2-->
         <Button
@@ -82,7 +85,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp"
+            android:gravity="center"
+            android:textAlignment="gravity"/>
 
         <!--button 3-->
         <Button
@@ -91,7 +96,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 4-->
         <Button
@@ -100,7 +105,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp"
+            android:gravity="center"
+            android:textAlignment="gravity"/>
 
         <!--button 5-->
         <Button
@@ -109,7 +116,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
     </LinearLayout>
 
@@ -126,7 +133,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 7-->
         <Button
@@ -135,7 +142,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 8-->
         <Button
@@ -144,7 +151,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 9-->
         <Button
@@ -153,7 +160,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 10-->
         <Button
@@ -162,7 +169,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
     </LinearLayout>
 
@@ -179,7 +186,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 12-->
         <Button
@@ -188,7 +195,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 13-->
         <Button
@@ -197,7 +204,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 14-->
         <Button
@@ -206,7 +213,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 15-->
         <Button
@@ -215,7 +222,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
     </LinearLayout>
 
@@ -232,7 +239,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 17-->
         <Button
@@ -241,7 +248,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 18-->
         <Button
@@ -250,7 +257,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 19-->
         <Button
@@ -259,7 +266,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 20-->
         <Button
@@ -268,7 +275,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
     </LinearLayout>
 
@@ -285,7 +292,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 22-->
         <Button
@@ -294,7 +301,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 23-->
         <Button
@@ -303,7 +310,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 24-->
         <Button
@@ -312,7 +319,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
         <!--button 25-->
         <Button
@@ -321,7 +328,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="40sp" />
 
     </LinearLayout>
 
