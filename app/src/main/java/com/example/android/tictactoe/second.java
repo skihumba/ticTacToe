@@ -12,15 +12,15 @@ public class second extends AppCompatActivity implements View.OnClickListener {
 
     private Button[][] buttons = new Button[5][5];
 
-    private boolean player1Turn = true;
+    private boolean player1Playing = true;
 
     private int roundCount;
 
-    private int player1Points;
-    private int player2Points;
+    private int p1Points;
+    private int p2Points;
 
-    private TextView player1Score;
-    private TextView player2Score;
+    private TextView p1Score;
+    private TextView p2Score;
 
 
     @Override
@@ -28,8 +28,8 @@ public class second extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        player1Score = findViewById(R.id.player1_score);
-        player2Score = findViewById(R.id.player2_score);
+        p1Score = findViewById(R.id.player1_score);
+        p2Score = findViewById(R.id.player2_score);
 
 //        buttons
         for (int i = 0; i < 5; i++) {
@@ -77,7 +77,7 @@ public class second extends AppCompatActivity implements View.OnClickListener {
         }
 
 //      check whose turn it is and if player1 set button text to X and O if player2
-        if (player1Turn) {
+        if (player1Playing) {
             ((Button) v).setText("X");
         } else {
             ((Button) v).setText("O");
@@ -88,17 +88,17 @@ public class second extends AppCompatActivity implements View.OnClickListener {
 
 //      check which player has won
         if (checkForWin()) {
-            if (player1Turn) {
-                player1Wins();
+            if (player1Playing) {
+                p1Wins();
             } else {
-                player2Wins();
+                p2Wins();
             }
 //        draw if none has won
         } else if (roundCount == 25) {
             draw();
 //        switch player turns
         } else {
-            player1Turn = !player1Turn;
+            player1Playing = !player1Playing;
         }
 
     }
@@ -156,17 +156,17 @@ public class second extends AppCompatActivity implements View.OnClickListener {
     }
 
 
-    private void player1Wins() {
-        player1Points++;
+    private void p1Wins() {
+        p1Points++;
         Toast.makeText(this, "Player 1 wins!", Toast.LENGTH_SHORT).show();
-        updatePointsText();
+        updateScores();
         resetBoard();
     }
 
-    private void player2Wins() {
-        player2Points++;
+    private void p2Wins() {
+        p2Points++;
         Toast.makeText(this, "Player 2 wins!", Toast.LENGTH_SHORT).show();
-        updatePointsText();
+        updateScores();
         resetBoard();
     }
 
@@ -176,9 +176,9 @@ public class second extends AppCompatActivity implements View.OnClickListener {
     }
 
     //  show player points
-    private void updatePointsText() {
-        player1Score.setText(Integer.toString(player1Points));
-        player2Score.setText(Integer.toString(player2Points));
+    private void updateScores() {
+        p1Score.setText(Integer.toString(p1Points));
+        p2Score.setText(Integer.toString(p2Points));
     }
 
     private void resetBoard() {
@@ -189,14 +189,14 @@ public class second extends AppCompatActivity implements View.OnClickListener {
         }
 
         roundCount = 0;
-        player1Turn = true;
+        player1Playing = true;
 
     }
 
     private void resetGame() {
-        player1Points = 0;
-        player2Points = 0;
-        updatePointsText();
+        p1Points = 0;
+        p2Points = 0;
+        updateScores();
         resetBoard();
     }
 
@@ -205,9 +205,9 @@ public class second extends AppCompatActivity implements View.OnClickListener {
         super.onSaveInstanceState(outState);
 
         outState.putInt("roundCount", roundCount);
-        outState.putInt("player1Points", player1Points);
-        outState.putInt("player2Points", player2Points);
-        outState.putBoolean("player1Turn", player1Turn);
+        outState.putInt("p1Points", p1Points);
+        outState.putInt("p2Points", p2Points);
+        outState.putBoolean("player1Playing", player1Playing);
     }
 
     @Override
@@ -215,9 +215,9 @@ public class second extends AppCompatActivity implements View.OnClickListener {
         super.onRestoreInstanceState(savedInstanceState);
 
         roundCount = savedInstanceState.getInt("roundCount");
-        player1Points = savedInstanceState.getByte("player1Points");
-        player2Points = savedInstanceState.getByte("player2Points");
-        player1Turn = savedInstanceState.getBoolean("player1Turn");
+        p1Points = savedInstanceState.getByte("p1Points");
+        p2Points = savedInstanceState.getByte("p2Points");
+        player1Playing = savedInstanceState.getBoolean("player1Playing");
 
     }
 
